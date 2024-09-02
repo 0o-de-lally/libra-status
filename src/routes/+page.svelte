@@ -1,4 +1,6 @@
 <script lang="ts">
+  export const prerender = true
+
 	import { refreshValidator } from "$lib";
 	import type { ReportValidator } from "libra-reports/src/reports/validators";
 	import { onMount } from "svelte";
