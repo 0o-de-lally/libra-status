@@ -1,0 +1,50 @@
+<!doctype html>
+<style>
+  body {
+    font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
+  }
+</style>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BitYVaIJ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.CPDJ9ly4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.0CUtvLjF.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.DuM86TvJ.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.og7yL3Mn.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.ByDi4hD5.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <body>... living is waiting ...</body> 
+			
+			<script>
+				{
+					__sveltekit_1hgi9x4 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/libra-status"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BitYVaIJ.js"),
+						import("./_app/immutable/entry/app.0CUtvLjF.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
