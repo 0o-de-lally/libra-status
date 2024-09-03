@@ -33,6 +33,8 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^3.0.4",
-		"libra-reports": "https://github.com/0o-de-lally/libra-reports/"
+		"install": "^0.13.0",
+		"libra-reports": "https://github.com/0o-de-lally/libra-reports/",
+		"svelte-persisted-store": "^0.11.0"
 	}
 }
