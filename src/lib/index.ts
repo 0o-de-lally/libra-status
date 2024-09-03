@@ -3,8 +3,8 @@ import { maybeInitClient } from 'libra-reports/src/makeClient';
 import { ReportValidator } from 'libra-reports/src/reports/validators';
 
 export const refreshValidator = async (): Promise<ReportValidator> => {
-	let client = await maybeInitClient();
-	let rv = new ReportValidator();
+	const client = await maybeInitClient();
+	const rv = new ReportValidator();
 	await rv.populateAll(client);
 	return rv;
 };
