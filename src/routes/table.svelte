@@ -3,7 +3,6 @@
 	import { refreshValidator } from '$lib';
 	import type { ReportValidator } from 'libra-reports/src/reports/validators';
 	import { onMount } from 'svelte';
-	import type { ValidatorAccount } from 'libra-reports/src/types/system';
 	import { validatorDB } from '$lib/persist';
 
   let loading = false;
@@ -34,8 +33,9 @@
 				<th>handle</th>
 				<th>address</th>
 				<th>bid</th>
-				<th>qualification</th>
+				<th>warning</th>
 				<th>active vouchers</th>
+				<th>vouches received</th>
 				<th>vouches given</th>
 			</tr>
 
@@ -45,14 +45,14 @@
 					<Row {v} />
 				{/if}
 			{/each}
-			<tr><b>BIDDING</b></tr>
+			<p><b>BIDDING</b></p>
 			{#each $validatorDB as v}
 				{#if !v.in_val_set && v.qualification_errors.length == 0}
 					<Row {v} />
 				{/if}
 			{/each}
 
-			<tr><b>INELIGIBLE</b></tr>
+			<p><b>INELIGIBLE</b></p>
 			{#each $validatorDB as v}
 				{#if v.qualification_errors.length > 0}
 					<Row {v} />

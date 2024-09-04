@@ -3,6 +3,7 @@
 	import type { ValidatorAccount } from 'libra-reports/src/types/system';
 
 	export let v: ValidatorAccount;
+
 </script>
 
 <tr>
@@ -11,5 +12,6 @@
 	<td>{v.bid_value}</td>
 	<td>{v.qualification_errors}</td>
 	<td>{mapHandles(v.active_vouchers ?? [])}</td>
+	<td>{mapHandles(v.vouches_received?.addresses ?? [])}</td>
 	<td>{mapHandles(v.vouches_given?.addresses ?? [])}</td>
 </tr>
