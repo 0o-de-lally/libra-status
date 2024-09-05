@@ -34,8 +34,8 @@
 				<th>address</th>
 				<th>bid</th>
 				<th>warning</th>
-				<th>active vouchers</th>
-				<th>vouches received</th>
+				<th>vouchers in set (excludes family)</th>
+				<th>all received (includes family)</th>
 				<th>vouches given</th>
 			</tr>
 
